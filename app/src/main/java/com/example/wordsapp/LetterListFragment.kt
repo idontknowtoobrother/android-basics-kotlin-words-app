@@ -2,6 +2,7 @@ package com.example.wordsapp
 
 import android.os.Bundle
 import android.view.*
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
@@ -44,6 +45,7 @@ class LetterListFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         recyclerView = binding?.recyclerView!!
         chooseLayout()
+        (activity as AppCompatActivity).supportActionBar?.title = "Word"
     }
 
     private fun chooseLayout() {

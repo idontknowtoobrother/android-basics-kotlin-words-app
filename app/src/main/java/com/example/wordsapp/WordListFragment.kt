@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -54,7 +55,9 @@ class WordListFragment : Fragment() {
             DividerItemDecoration(context, DividerItemDecoration.VERTICAL)
         )
 
-//        title = getString(R.string.detail_prefix) + " " + letterId
+        val title = getString(R.string.detail_prefix) + " " + letterId
+        (activity as AppCompatActivity).supportActionBar?.title = title
+
 
     }
 
