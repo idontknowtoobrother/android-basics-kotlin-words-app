@@ -55,8 +55,8 @@ class WordListFragment : Fragment() {
             DividerItemDecoration(context, DividerItemDecoration.VERTICAL)
         )
 
-        val title = getString(R.string.detail_prefix) + " " + letterId
-        (activity as AppCompatActivity).supportActionBar?.title = title
+//        val title = getString(R.string.detail_prefix) + " " + letterId
+//        (activity as AppCompatActivity).supportActionBar?.title = title
 
 
     }

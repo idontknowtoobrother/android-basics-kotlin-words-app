@@ -45,7 +45,7 @@ class LetterListFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         recyclerView = binding?.recyclerView!!
         chooseLayout()
-        (activity as AppCompatActivity).supportActionBar?.title = "Word"
+//        (activity as AppCompatActivity).supportActionBar?.title = "Word"
     }
 
     private fun chooseLayout() {
